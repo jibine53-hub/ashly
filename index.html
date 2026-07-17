@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,12 +11,6 @@
     <meta property="og:description" content="Professional portfolio showcasing critical care expertise, MICU/CTVS ICU experience, and clinical credentials.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="./profile-photo.png">
-    
-    <!-- Twitter Card Metadata -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Ashly Roy | DHA Licensed Registered Nurse">
-    <meta name="twitter:description" content="Professional portfolio showcasing critical care expertise, MICU/CTVS ICU experience, and clinical credentials.">
-    <meta name="twitter:image" content="./profile-photo.png">
 
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,6 +18,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Kinetic Background Grid Layer -->
+    <div class="kinetic-bg"></div>
 
     <!-- Scroll Progress Indicator -->
     <div id="scroll-progress" class="scroll-progress"></div>
@@ -42,41 +39,50 @@
                 <a href="#contact" class="nav-link">Contact</a>
                 <a href="./ashly-roy-cv.pdf" class="nav-btn-sm" download>Download CV</a>
             </div>
-            <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
+            
+            <div class="nav-actions">
+                <!-- Theme Controller Switch Toggle Toggle -->
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                
+                <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero-section">
         <div class="hero-container">
-            <div class="hero-text reveal">
-                <span class="hero-subtitle">Hello, I'm</span>
-                <h1 class="hero-title">ASHLY ROY</h1>
-                <h2 class="hero-tagline">DHA Licensed Registered Nurse</h2>
-                <p class="hero-description">
+            <div class="hero-text">
+                <div class="reveal-mask"><span class="hero-subtitle">Hello, I'm</span></div>
+                <div class="reveal-mask"><h1 class="hero-title">ASHLY ROY</h1></div>
+                <div class="reveal-mask"><h2 class="hero-tagline">DHA Licensed Registered Nurse</h2></div>
+                <p class="hero-description reveal-blur">
                     Delivering compassionate, evidence-based patient care with clinical experience across intensive care, cardiac care, and diverse healthcare environments.
                 </p>
-                <div class="hero-badges">
+                <div class="hero-badges reveal-blur">
                     <span class="badge"><span class="pulse-dot"></span> DHA Licensed</span>
                     <span class="badge"><span class="pulse-dot"></span> BLS Certified</span>
                     <span class="badge"><span class="pulse-dot"></span> ICU Experienced</span>
                 </div>
-                <div class="hero-actions">
-                    <a href="#about" class="btn-primary">Explore My Journey</a>
-                    <a href="./ashly-roy-cv.pdf" class="btn-secondary" download>
+                <div class="hero-actions reveal-blur">
+                    <a href="#about" class="btn-primary magnetic">Explore My Journey</a>
+                    <a href="./ashly-roy-cv.pdf" class="btn-secondary magnetic" download>
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v4M7 10l5 5 5-5M12 15V3"/></svg>
                         Download CV
                     </a>
                 </div>
-                <div class="hero-link-wrap">
+                <div class="hero-link-wrap reveal-blur">
                     <a href="#contact" class="hero-link">Get In Touch &rarr;</a>
                 </div>
             </div>
-            <div class="hero-visual reveal">
+            <div class="hero-visual reveal-scale">
                 <div class="image-frame-container">
                     <div class="ambient-glow"></div>
                     <div class="image-frame">
@@ -104,35 +110,35 @@
     <!-- About Section -->
     <section id="about" class="about-section section-padding">
         <div class="container">
-            <div class="section-header text-center reveal">
+            <div class="section-header text-center reveal-blur">
                 <h2 class="section-title">Care Beyond Clinical Practice</h2>
                 <div class="title-line"></div>
                 <p class="section-subtitle">DHA-licensed Registered Nurse with high-intensity healthcare experience across premier medical institutions in Dubai and India.</p>
             </div>
             
             <div class="about-grid">
-                <div class="about-content reveal">
+                <div class="about-content reveal-blur">
                     <h3>Commitment to Advanced Patient Recovery</h3>
                     <p>Equipped with solid expertise in Critical Care, Medical Intensive Care (MICU), and Cardiothoracic Vascular Surgery Intensive Care (CTVS ICU). Proven capability in handling complex cardiovascular cases, post-operative stabilization, mechanical ventilation management, and emergency clinical interventions.</p>
                     <p>Dedicated to maximizing patient safety and ensuring rigorous protocol compliance, while rendering clinical expertise seamlessly alongside multidisciplinary diagnostic teams.</p>
                 </div>
-                <div class="about-cards reveal">
-                    <div class="highlight-card">
+                <div class="about-cards">
+                    <div class="highlight-card reveal-scale">
                         <div class="card-icon">DHA</div>
                         <h4>Licensed</h4>
                         <p>Registered Healthcare Professional, Dubai</p>
                     </div>
-                    <div class="highlight-card">
+                    <div class="highlight-card reveal-scale">
                         <div class="card-icon">BLS</div>
                         <h4>Certified</h4>
                         <p>Basic Life Support Emergency Protocols</p>
                     </div>
-                    <div class="highlight-card">
+                    <div class="highlight-card reveal-scale">
                         <div class="card-icon">ICU</div>
                         <h4>Experienced</h4>
                         <p>Advanced Management of Critical Cases</p>
                     </div>
-                    <div class="highlight-card">
+                    <div class="highlight-card reveal-scale">
                         <div class="card-icon">CC</div>
                         <h4>Expertise</h4>
                         <p>Continuous Invasive Physiological Monitoring</p>
@@ -160,7 +166,6 @@
                 <div class="ticker-item">ECG Machines</div>
                 <div class="ticker-item">Ambu Bags</div>
             </div>
-            <!-- Duplicate for infinite loop mapping -->
             <div class="ticker" aria-hidden="true">
                 <div class="ticker-item">Cardiac Monitors</div>
                 <div class="ticker-item">Ventilators</div>
@@ -181,7 +186,7 @@
     <!-- Professional Journey Section -->
     <section id="experience" class="experience-section section-padding">
         <div class="container">
-            <div class="section-header text-center reveal">
+            <div class="section-header text-center reveal-blur">
                 <h2 class="section-title">Professional Journey</h2>
                 <div class="title-line"></div>
             </div>
@@ -189,8 +194,7 @@
             <div class="timeline">
                 <div class="timeline-progress"></div>
                 
-                <!-- Experience 1 -->
-                <div class="timeline-item left reveal">
+                <div class="timeline-item left reveal-blur">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <span class="timeline-date">November 2023 – Present</span>
@@ -204,8 +208,7 @@
                     </div>
                 </div>
 
-                <!-- Experience 2 -->
-                <div class="timeline-item right reveal">
+                <div class="timeline-item right reveal-blur">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <span class="timeline-date">03 May 2021 – 20 June 2023</span>
@@ -220,8 +223,7 @@
                     </div>
                 </div>
 
-                <!-- Experience 3 -->
-                <div class="timeline-item left reveal">
+                <div class="timeline-item left reveal-blur">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <span class="timeline-date">24 February 2020 – 01 March 2021</span>
@@ -242,48 +244,48 @@
     <!-- Clinical Expertise Section -->
     <section id="expertise" class="expertise-section section-padding">
         <div class="container">
-            <div class="section-header text-center reveal">
+            <div class="section-header text-center reveal-blur">
                 <h2 class="section-title">Clinical Expertise</h2>
                 <div class="title-line"></div>
             </div>
             
             <div class="expertise-grid">
-                <div class="expertise-card reveal">
+                <div class="expertise-card reveal-scale">
                     <div class="exp-icon">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
                     </div>
                     <h3>Critical Care & MICU</h3>
                     <p>Advanced multi-system support and systematic treatment mapping for acute, unstable conditions.</p>
                 </div>
-                <div class="expertise-card reveal">
+                <div class="expertise-card reveal-scale">
                     <div class="exp-icon">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m12 14-4-4h8Z"/></svg>
                     </div>
                     <h3>Cardiothoracic Nursing</h3>
                     <p>Comprehensive perioperative tracking for complex open-heart procedures including CABG, AVR, and DVR.</p>
                 </div>
-                <div class="expertise-card reveal">
+                <div class="expertise-card reveal-scale">
                     <div class="exp-icon">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 22h20M12 2v16M8 8h8"/></svg>
                     </div>
                     <h3>Ventilator Management</h3>
                     <p>Precise adaptation of airway modes, respiratory synchronization, and airway clearance handling.</p>
                 </div>
-                <div class="expertise-card reveal">
+                <div class="expertise-card reveal-scale">
                     <div class="exp-icon">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
                     </div>
                     <h3>ECG & ABG Interpretation</h3>
                     <p>Real-time arrhythmia classification and evaluation of acid-base blood chemistry deviations.</p>
                 </div>
-                <div class="expertise-card reveal">
+                <div class="expertise-card reveal-scale">
                     <div class="exp-icon">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>
                     </div>
                     <h3>Infection Control</h3>
                     <p>Vigilant deployment of clinical sterilization barriers to systematically reduce CAUTI, CLABSI, and VAP indicators.</p>
                 </div>
-                <div class="expertise-card reveal">
+                <div class="expertise-card reveal-scale">
                     <div class="exp-icon">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m2 22 20-20M8 6H4v4M16 14h4v4"/></svg>
                     </div>
@@ -294,31 +296,15 @@
         </div>
     </section>
 
-    <!-- ICU Architecture Gallery Block -->
-    <section id="gallery" class="gallery-section reveal">
-        <div class="container">
-            <div class="gallery-placeholder-card">
-                <div class="gallery-card-bg"></div>
-                <div class="gallery-content">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2z"/><circle cx="8.5" cy="10.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-                    <h3>Clinical Visual Module</h3>
-                    <p>Institutional environments and critical care infrastructure configurations. Secure asset arrays map automatically upon repository expansion.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Clinical Procedures Section -->
+    <!-- Procedures Infrastructure Module -->
     <section id="procedures" class="procedures-section section-padding">
         <div class="container">
-            <div class="section-header text-center reveal">
+            <div class="section-header text-center reveal-blur">
                 <h2 class="section-title">Clinical Procedures</h2>
                 <div class="title-line"></div>
-                <p class="section-subtitle">Categorized breakdown of practical nursing nursing interventions executed regularly in core clinical settings.</p>
             </div>
             
-            <div class="accordion-container reveal">
-                <!-- Group 1 -->
+            <div class="accordion-container reveal-blur">
                 <div class="accordion-item">
                     <button class="accordion-header">
                         <span>Critical & Respiratory Interventions</span>
@@ -337,7 +323,6 @@
                     </div>
                 </div>
 
-                <!-- Group 2 -->
                 <div class="accordion-item">
                     <button class="accordion-header">
                         <span>Diagnostics & Monitoring</span>
@@ -355,7 +340,6 @@
                     </div>
                 </div>
 
-                <!-- Group 3 -->
                 <div class="accordion-item">
                     <button class="accordion-header">
                         <span>Therapeutics & General Care</span>
@@ -378,12 +362,11 @@
         </div>
     </section>
 
-    <!-- Skills, Credentials, & Education Section Block -->
+    <!-- Credentials Matrix -->
     <section id="credentials" class="credentials-section section-padding">
         <div class="container">
             <div class="grid-three-col">
-                <!-- Credentials Column -->
-                <div class="panel reveal">
+                <div class="panel reveal-scale">
                     <h3 class="panel-title">Licensures & Credentials</h3>
                     <div class="credential-card">
                         <div class="cred-badge">DHA</div>
@@ -402,8 +385,7 @@
                     </div>
                 </div>
 
-                <!-- Skills & Languages Column -->
-                <div class="panel reveal">
+                <div class="panel reveal-scale">
                     <h3 class="panel-title">Core Skills & Language Matrix</h3>
                     <div class="skills-flex">
                         <span class="skill-pill">Critical Thinking</span>
@@ -434,8 +416,7 @@
                     </div>
                 </div>
 
-                <!-- Education Column -->
-                <div class="panel reveal">
+                <div class="panel reveal-scale">
                     <h3 class="panel-title">Academic Qualifications</h3>
                     <div class="edu-item">
                         <span class="edu-year">2015 – 2019</span>
@@ -463,7 +444,7 @@
     <!-- Contact Section -->
     <section id="contact" class="contact-section section-padding">
         <div class="container">
-            <div class="contact-card reveal">
+            <div class="contact-card reveal-blur">
                 <h2 class="contact-title">Let's Connect</h2>
                 <p class="contact-text">Open to verified healthcare pathways and professional nursing engagements across critical environments where strict clinical protocols, advanced safety compliance, and patient care come first.</p>
                 
@@ -476,7 +457,7 @@
                         <label for="user-msg">Message Summary</label>
                         <textarea id="user-msg" rows="4" placeholder="Discussing potential critical care professional roles..." required></textarea>
                     </div>
-                    <button type="submit" class="btn-primary w-full">Generate Email Framework</button>
+                    <button type="submit" class="btn-primary w-full magnetic">Generate Email Framework</button>
                 </form>
 
                 <div class="contact-methods">
@@ -493,12 +474,10 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <p>&copy; 2026 Ashly Roy. All Rights Reserved. Prepared for DHA Registration Paths.</p>
     </footer>
 
-    <!-- Back to Top Button -->
     <button id="back-to-top" class="back-to-top" aria-label="Scroll to top">&uarr;</button>
 
     <script src="./app.js"></script>
